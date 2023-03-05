@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+svg{
+    width:20pt;
+}
+.current{
+    color:#F0A500;
+}
 header{
     display:flex;
     justify-content: space-between;
@@ -49,8 +55,6 @@ h4{
 }
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 .habits li {
     display: inline-block;
@@ -58,46 +62,69 @@ ul {
     height: 2em;
     /*border:2px black solid;*/
     text-align: center;
+    font-size: 14pt;
+    margin:0;
+    padding-top: auto;
+    padding-bottom: auto;
 }
 .habits .blank{
     width: .75em;
+    margin:0;
+    padding: 0;
 }
 .habit {
     display: block;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 .days {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 body{
-    display:grid;
     background-color: #1B1A17;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 3em auto;
+}
+.container{
+    height:100vh;
+    width:100vw;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 3em 1fr;
     grid-template-areas:
     "header header"
     "directory tracker";
-    height:100vh;
-    width:100vw;
+}
+.adder{
+    width:fit-content;
+    position:absolute;
+    bottom:20px;
+    right:30px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 .directory{
+    margin:20px;
     grid-area: directory;
     display:flex;
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mini{
     background-color: #E6D5B8;
-    margin:20px;
-    border-radius: 20px;
+    width:100%;
+    height:30%;
+    border-radius: 10px;
+    text-align:center;
+    display:grid;
+    place-items: center;
 }
-.directory-list li{
-    padding:10px;
-    font-family: Lora;
-    font-weight: 300;
-
-}
-.directory-list{
-    padding:2em 0 2em 0;
+input{
+    background:#1B1A17;
+    border:none;
+    color:#E6D5B8;
+    height: 50%;
+    margin:auto;
 }
 .habits{
     grid-area: tracker;
@@ -108,6 +135,17 @@ body{
     background-color: #E6D5B8;
     margin:20px;
     border-radius: 10px;
+    padding:20px
+}
+.habit ul{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.days ul{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
 }
 .habit, .days{
     display:grid;
@@ -117,5 +155,28 @@ body{
 }
 span{
     display:grid;
-    place-items:center;
+    place-items:top;
+}
+span:hover{
+    cursor: pointer;
+}
+.new{
+    font-size: 36pt;
+    z-index: 10;
+    height: 45px;
+    width: 45px;
+    margin:auto;
+}
+video{
+    height:100px;
+    width:100px;
+}
+button{
+    border: none;
+    background: none;
+    height: fit-content;
+    width:fit-content;
+}
+.selected{
+    color:#F0A500;
 }

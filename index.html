@@ -6,149 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Avocado Wellness</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h4>Avocado Wellness</h4>
-        <ul class="nav">
-            <li>Habit Tracker</li>
-            <li>Sleep Tracker</li>
-            <li>Reflection</li>
-            <li>@Username</li>
-        </ul>
-    </header>
-    <div class="directory">
-        <ul class="directory-list">
-            <li class="active">Drink 8 glasses of water</li>
-            <li>Exercise for 30 minutes</li>
-        </ul>
+    <div class="container">
+        <header>
+            <h4>Avocado Wellness</h4>
+            <ul class="nav">
+                <li>Habit Tracker</li>
+                <li>Sleep Tracker</li>
+                <li>Reflection</li>
+                <li>@Username</li>
+            </ul>
+        </header>
+        <div class="directory">
+            <div class="streak mini">
+                <h2>
+                </h2>
+            </div>
+            <div class="total mini">
+                <h2></h2>
+            </div>
+            <div class="fail mini">
+                <h2></h2>
+            </div>
+        </div>
+        <div class="habits">
+            <h2>March</h2>
+            <div class="days">
+                <span> </span>
+                <ul class="daylist">
+                    <li>1<br>W</li>
+                    <li>2<br>T</li>
+                    <li>3<br>F</li>
+                    <li>4<br>S</li>
+                    <li>5<br>S</li>
+                    <li class="blank"></li>
+                    <li>6<br>M</li>
+                    <li>7<br>T</li>
+                    <li>8<br>W</li>
+                    <li>9<br>T</li>
+                    <li>10<br>F</li>
+                    <li class="current">11<br>S</li>
+                    <li>12<br>S</li>
+                    <li class="blank"></li>
+                    <li>13<br>M</li>
+                    <li>14<br>T</li>
+                    <li>15<br>W</li>
+                    <li>16<br>T</li>
+                    <li>17<br>F</li>
+                    <li>18<br>S</li>
+                    <li>19<br>S</li>
+                    <li class="blank"></li>
+                    <li>20<br>M</li>
+                    <li>21<br>T</li>
+                    <li>22<br>W</li>
+                    <li>23<br>T</li>
+                    <li>24<br>F</li>
+                    <li>25<br>S</li>
+                    <li>26<br>S</li>
+                    <li class="blank"></li>
+                    <li>27<br>M</li>
+                    <li>28<br>T</li>
+                    <li>29<br>W</li>
+                    <li>30<br>T</li>
+                    <li>31<br>F</li>
+                </ul>
+            </div>
+            <!-- Add more habits as needed -->
+        </div>
     </div>
-    <div class="habits">
-        <h2>March</h2>
-        <div class="days">
-            <span> </span>
-            <ul class="daylist">
-                <li>1<br>W</li>
-                <li>2<br>T</li>
-                <li>3<br>F</li>
-                <li>4<br>S</li>
-                <li>5<br>S</li>
-                <li class="blank"></li>
-                <li>6<br>M</li>
-                <li>7<br>T</li>
-                <li>8<br>W</li>
-                <li>9<br>T</li>
-                <li>10<br>F</li>
-                <li>11<br>S</li>
-                <li>12<br>S</li>
-                <li class="blank"></li>
-                <li>13<br>M</li>
-                <li>14<br>T</li>
-                <li>15<br>W</li>
-                <li>16<br>T</li>
-                <li>17<br>F</li>
-                <li>18<br>S</li>
-                <li>19<br>S</li>
-                <li class="blank"></li>
-                <li>20<br>M</li>
-                <li>21<br>T</li>
-                <li>22<br>W</li>
-                <li>23<br>T</li>
-                <li>24<br>F</li>
-                <li>25<br>S</li>
-                <li>26<br>S</li>
-                <li class="blank"></li>
-                <li>27<br>M</li>
-                <li>28<br>T</li>
-                <li>29<br>W</li>
-                <li>30<br>T</li>
-                <li>31<br>F</li>
-            </ul>
-        </div>
-        <div class="habit">
-            <span>Drink 8 glasses of water:</span>
-            <ul class="water">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li class="blank"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li class="blank"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li class="blank"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li class="blank"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="habit">
-            <span>Exercise for 30 minutes:</span>
-            <ul class="exercise">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li class="blank"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li class="blank"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li class="blank"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li class="blank"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <!-- Add more habits as needed -->
+    <div class="adder">
+        <input type="text" name="text-input">
+        <button class="new">
+            <ion-icon name="add-circle-outline"></ion-icon>
+        </button>
+    </div>
+    <div>
+        
     </div>
 </body>
+<script src="script.js"></script>
 </html>
