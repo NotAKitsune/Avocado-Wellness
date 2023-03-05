@@ -180,3 +180,11 @@ button{
 .selected{
     color:#F0A500;
 }
+.profile img{
+    width:200px
+}
+.profile{
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
